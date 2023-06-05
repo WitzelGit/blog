@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1><%= title %></h1>
+  <form action="/blog/" method="post" enctype="multipart/form-data">
+    <label for="title">Titel:</label><br>
+    <input type="text" id="title" name="title" placeholder="Titel"><br>
+    <label for="name">Benutzername:</label><br>
+    <input type="text" id="name" name="name" placeholder="Name">
+    <label for="date">Datum des Spiels</label>
+    <input type="date" id="date" name="date">
+    <label for="text">Benutzername:</label>Inhalt<br>
+    <input type="text" id="text" name="text" placeholder="Hier den Text eingeben. Danke!">
+    <label  for="file">Datei:</label>
+    <input type="file" id="file" name="file">
+    <button type="submit">Eintragen</button>
+  </form>
+</body>
+
+</html>
